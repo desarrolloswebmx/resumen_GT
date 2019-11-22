@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resumen proyectos GT</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+<header></header>
+<main class="container">
+	<div class="row justify-content-center pt-4">	
+		<form action="" name="login" class="col-10 col-sm-6 col-xl-5 bg-dark text-white p-4">
+			<div>
+				<img src="img/Tares.png" alt="Tares logo" id="logo">
+			</div>
+			<div class="form-group pt-2">
+				<label for="">Usuario</label>
+				<input name="usuario" type="text" class="Input form-control" value="">
+			</div>
+			<div class="form-group">
+				<label for="">Contraseña</label>
+				<input name="password" type="password" class="Input form-control" value="">
+			</div>
+			<div class="d-flex justify-content-center"></dir><input value="Entrar" onclick="Login()" type="button" class="boton btn btn-primary align-content-center pl-4 pr-4">
+			</div>	
+
+			<p id="error" class="pt-4 text-danger"></p>
+
+		</form>
+		
+	</div>
+</main>
+<footer></footer>
+<script language="JavaScript">
+
+
+function Login(){ 
+var done=0; 
+var usuario=document.login.usuario.value; 
+var password=document.login.password.value; 
+if (usuario=="USUARIO1" && password=="CONTRASEÑA1") { 
+window.location="Resumen.html"; 
+} 
+else if (usuario=="USUARIO2" && password=="CONTRASEÑA2") { 
+window.location="Resumen.html"; 
+} 
+else if (usuario=="" && password=="") { 
+document.getElementById('error').innerHTML='Ingresar Usuario y Contraseña'; 
+} 
+else{
+document.getElementById('error').innerHTML='Usuario o Contraseña incorrectos';
+}
+} 
+</script>
+<script language="Javascript"> 
+ 
+//document.oncontextmenu = function(){return false} // para desactivar el click derecho del mouse
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
